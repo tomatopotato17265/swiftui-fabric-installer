@@ -1,0 +1,42 @@
+{
+  "fill" : {
+    "solid" : "display-p3:0.78538,0.78988,0.73668,1.00000"
+  },
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "glass-specializations" : [
+            {
+              "appearance" : "tinted",
+              "value" : false
+            }
+          ],
+          "image-name" : "fabric.png",
+          "name" : "fabric",
+          "position" : {
+            "scale" : 1.75,
+            "translation-in-points" : [
+              -28,
+              0
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.3
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "circles" : [
+      "watchOS"
+    ],
+    "squares" : "shared"
+  }
+}

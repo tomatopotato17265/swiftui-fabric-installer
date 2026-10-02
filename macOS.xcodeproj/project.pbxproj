@@ -6,8 +6,13 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		81877D3F306FED3D0045CDC3 /* icon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 81877D3E306FED3D0045CDC3 /* icon.icon */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		81877D2E306FEA470045CDC3 /* macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81877D3E306FED3D0045CDC3 /* icon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = icon.icon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -30,6 +35,7 @@
 		81877D25306FEA470045CDC3 = {
 			isa = PBXGroup;
 			children = (
+				81877D3E306FED3D0045CDC3 /* icon.icon */,
 				81877D30306FEA470045CDC3 /* macOS */,
 				81877D2F306FEA470045CDC3 /* Products */,
 			);
@@ -102,6 +108,7 @@
 		81877D2C306FEA470045CDC3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				81877D3F306FED3D0045CDC3 /* icon.icon in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
@@ -236,7 +243,7 @@
 		81877D3A306FEA480045CDC3 /* Debug configuration for PBXNativeTarget "macOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -245,6 +252,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fabric Installer";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -266,7 +274,7 @@
 		81877D3B306FEA480045CDC3 /* Release configuration for PBXNativeTarget "macOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -275,6 +283,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fabric Installer";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
