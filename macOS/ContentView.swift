@@ -7,15 +7,33 @@
 
 import SwiftUI
 
+enum AppTab: String, CaseIterable, Identifiable {
+    case client = "Client"
+    case server = "Server"
+
+    var id: String { rawValue }
+}
+
 struct ContentView: View {
+    @State private var selectedTab: AppTab = .client
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView(selection: $selectedTab) {
+            ForEach(AppTab.allCases) { tab in
+                Tab(value: tab) {
+                    VStack {
+                        Image(systemName: "globe")
+                            .imageScale(.large)
+                            .foregroundStyle(.tint)
+                        Text(tab.rawValue)
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                } label: {
+                    Text(tab.rawValue)
+                }
+            }
         }
-        .padding()
+        .tabViewStyle(.tabBarOnly)
     }
 }
 
